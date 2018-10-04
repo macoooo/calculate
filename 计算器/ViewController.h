@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+@property (nonatomic, strong)NSMutableString *mutableString;
+@property (nonatomic, copy)NSString *beforeString;
+@property (nonatomic, copy)NSString *string;
+@property (nonatomic, strong)NSMutableString *calculateString;
 
 @end
 

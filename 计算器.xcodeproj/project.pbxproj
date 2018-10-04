@@ -15,6 +15,8 @@
 		97078A8F215B801B00EA20B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97078A8E215B801B00EA20B0 /* main.m */; };
 		97078A99215B801C00EA20B0 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97078A98215B801C00EA20B0 /* ___Tests.m */; };
 		97078AA4215B801C00EA20B0 /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97078AA3215B801C00EA20B0 /* ___UITests.m */; };
+		97078AB3215B804A00EA20B0 /* CalculateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97078AB2215B804A00EA20B0 /* CalculateView.m */; };
+		973AF6AA215E1686001E4268 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 973AF6A9215E1686001E4268 /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		97078A9F215B801C00EA20B0 /* 计算器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "计算器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97078AA3215B801C00EA20B0 /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		97078AA5215B801C00EA20B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97078AB1215B804A00EA20B0 /* CalculateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateView.h; sourceTree = "<group>"; };
+		97078AB2215B804A00EA20B0 /* CalculateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateView.m; sourceTree = "<group>"; };
+		973AF6A8215E1686001E4268 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		973AF6A9215E1686001E4268 /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				97078A80215B801A00EA20B0 /* AppDelegate.m */,
 				97078A82215B801A00EA20B0 /* ViewController.h */,
 				97078A83215B801A00EA20B0 /* ViewController.m */,
+				97078AB4215B806A00EA20B0 /* View */,
 				97078A85215B801A00EA20B0 /* Main.storyboard */,
 				97078A88215B801B00EA20B0 /* Assets.xcassets */,
 				97078A8A215B801B00EA20B0 /* LaunchScreen.storyboard */,
@@ -130,6 +137,25 @@
 				97078AA5215B801C00EA20B0 /* Info.plist */,
 			);
 			path = "计算器UITests";
+			sourceTree = "<group>";
+		};
+		97078AB4215B806A00EA20B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97078AB1215B804A00EA20B0 /* CalculateView.h */,
+				97078AB2215B804A00EA20B0 /* CalculateView.m */,
+				973AF6AB215E168B001E4268 /* Model */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		973AF6AB215E168B001E4268 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				973AF6A8215E1686001E4268 /* Model.h */,
+				973AF6A9215E1686001E4268 /* Model.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +291,8 @@
 				97078A84215B801A00EA20B0 /* ViewController.m in Sources */,
 				97078A8F215B801B00EA20B0 /* main.m in Sources */,
 				97078A81215B801A00EA20B0 /* AppDelegate.m in Sources */,
+				97078AB3215B804A00EA20B0 /* CalculateView.m in Sources */,
+				973AF6AA215E1686001E4268 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
