@@ -26,9 +26,10 @@
 - (BOOL)isOperator:(NSString *)string;
 - (BOOL)isConnectOperat:(NSString *)string;
 - (BOOL)isFourCalculate:(NSString *)string;
+- (BOOL)isFourCalculates:(NSString *)string;
 
 - (NSString *)calculate:(NSMutableString *)calculateString;
-- (int) priority:(char)op;
+- (int)priority:(NSString *)op;
 - (int) preToPostExp:(NSArray *)exp  andpostExp:(NSMutableArray *)postExp;
 -(NSString *) computePostExp:(char *)post;
 @end

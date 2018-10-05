@@ -131,7 +131,7 @@
     }
     if(btn.tag == 12){//=
         [_calculateString insertString:@"=," atIndex:[_calculateString length]];
-        _calculateView.textView.text = [_model calculate:_calculateString];
+        _mutableString = (NSMutableString *)[_model calculate:_calculateString];
     }
     if(btn.tag == 13){//+
         if([_mutableString length] == 0){
@@ -149,8 +149,8 @@
     }
     if(btn.tag == 14){//-
         if([_mutableString length] == 0){
-            [_mutableString appendString:@"0-"];
-            [_calculateString appendString:@"0-,"];
+            [_mutableString appendString:@"-"];
+            [_calculateString appendString:@"-,"];
         }
         else{
             if(![_model isConnectOperat:_string]){
@@ -180,17 +180,17 @@
         [_calculateString setString:@""];
     }
     if(btn.tag == 17){//(
-        if([_model isFourCalculate:_string]){
+        if([_model isFourCalculates:_string]){
             [_mutableString insertString:@"(" atIndex:[_mutableString length]];
             [_calculateString insertString:@"(," atIndex:[_calculateString length]];
         }
     }
     if(btn.tag == 18){//)
-        if([_model isOperator:_string]){
+        if([_model isFourCalculate:_string] || [_string isEqualToString:@"("]){
             
         }else{
             [_mutableString insertString:@")" atIndex:[_mutableString length]];
-            [_calculateString insertString:@"(" atIndex:[_calculateString length]];
+            [_calculateString insertString:@")," atIndex:[_calculateString length]];
         }
     }
     if(btn.tag == 19){//÷
